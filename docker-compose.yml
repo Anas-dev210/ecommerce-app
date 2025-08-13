@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  database:
+    image: postgres:15
+    container_name: ecommerce_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    container_name: ecommerce_backend
+    depends_on:
+      - database
+    ports:
+      - "8081:8080"
+
+  frontend:
+    build: ./frontend
+    container_name: ecommerce_frontend
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:
