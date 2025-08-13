@@ -13,6 +13,98 @@
 # Package Files #
 *.jar
 *.war
+
+# 🌱 General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 🧠 VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# ☕ Java & Spring Boot
+target/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+*.javadoc
+*.log
+*.hprof
+hs_err_pid*
+
+# 🧪 Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+**/target/
+dependency-reduced-pom.xml
+buildNumber.properties
+release.properties
+
+# 🧼 IntelliJ IDEA (if used)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# 🎨 Frontend (React, Angular, Vue, etc.)
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# 📦 OS-specific
+*.DS_Store
+*.AppleDouble
+*.LSOverride
+
+# 🔒 Security
+*.pem
+*.key
+*.crt
+*.env
+
+# 🧪 Testing & Coverage
+coverage/
+.nyc_output/
+jest.config.js
+test-results/
+
+# 🧹 Logs & Temp
+logs/
+*.log
+tmp/
+temp/
+
+# 🧰 Misc
+*.sqlite
+*.db
+*.pid
+*.seed
+*.bak
+*.old
+*.orig
+*.rej
+*.sublime-workspace
+*.sublime-project
 *.nar
 *.ear
 *.zip
