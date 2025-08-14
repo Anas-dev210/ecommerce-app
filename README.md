@@ -62,11 +62,18 @@ Example query:
 SELECT * FROM products;
 
 📡 API Endpoints
+
 Method	Endpoint	Description
+
 GET	/api/products	List all products
+
+
 GET	/api/products/{id}	Get product by ID
+
 POST	/api/products	Create a product
+
 PUT	/api/products/{id}	Update a product
+
 DELETE	/api/products/{id}	Delete a product
 
 🛑 Stopping the Application
@@ -78,6 +85,7 @@ To remove volumes (clear database data):
 docker compose down -v
 
 🛠 Development Notes
+
 Frontend is served by Nginx from the frontend/build directory
 
 Backend is a Spring Boot JAR running on OpenJDK 17
