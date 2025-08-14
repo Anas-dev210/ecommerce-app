@@ -15,7 +15,6 @@ A **3-tier application** running entirely with **Docker Compose**:
 ├── frontend/ # React app served via Nginx
 ├── database/ # PostgreSQL
 ├── docker-compose.yml
-├── .env # Environment variables
 └── README.md
 
 ---
@@ -32,14 +31,6 @@ Make sure you have:
 
 ## 🔑 Configuration
 
-Edit the `.env` file to set your own credentials:
-
-```env
-POSTGRES_USER=myuser
-POSTGRES_PASSWORD=mypassword
-POSTGRES_DB=mydb
-BACKEND_PORT=8080
-FRONTEND_PORT=3000
 🚀 Running Locally
 Clone this repository
 
