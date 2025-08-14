@@ -10,7 +10,6 @@ A **3-tier application** running entirely with **Docker Compose**:
 
 ## 📂 Project Structure
 
-.
 ├── backend/ # Spring Boot REST API
 
 ├── frontend/ # React app served via Nginx
