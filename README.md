@@ -12,9 +12,13 @@ A **3-tier application** running entirely with **Docker Compose**:
 
 .
 ├── backend/ # Spring Boot REST API
+
 ├── frontend/ # React app served via Nginx
+
 ├── database/ # PostgreSQL
+
 ├── docker-compose.yml
+
 └── README.md
 
 ---
