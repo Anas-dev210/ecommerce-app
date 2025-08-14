@@ -32,14 +32,17 @@ Make sure you have:
 ## 🔑 Configuration
 
 🚀 Running Locally
+
 Clone this repository
 
 git clone https://github.com/Anas-dev210/ecommerce-app.git
+
 cd ecommerce-app
 
 Start the application
 
 docker compose up --build
+
 Access the app
 
 Frontend → http://localhost:3000
@@ -49,9 +52,11 @@ Backend API → http://localhost:8080/api/products
 PostgreSQL → localhost:5432
 
 🗃 Accessing the Database
+
 To open a psql shell inside the database container:
 
 docker exec -it ecommerce_db psql -U myuser -d mydb
+
 Example query:
 
 SELECT * FROM products;
